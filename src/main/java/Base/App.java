@@ -11,10 +11,10 @@ public class App {
 
     public static void main( String[] args )
     {
-        String priceArray[] = new String[3];
-        String quantityArray[] = new String[3];
-        double priceNumArray[] = new double[3];
-        double quantityNumArray[] = new double[3];
+        String[] priceArray = new String[3];
+        String[] quantityArray = new String[3];
+        double[] priceNumArray = new double[3];
+        double[] quantityNumArray = new double[3];
 
         getPAndQ(priceArray, quantityArray);
         stringToInt(priceArray, quantityArray, priceNumArray, quantityNumArray);
@@ -24,7 +24,7 @@ public class App {
 
         printOutput(subtotal, tax, total);
     }
-    public static void getPAndQ(String priceArray[], String quantityArray[])
+    public static void getPAndQ(String[] priceArray, String[] quantityArray)
     {
         for (int i = 0; i < 3; i++)
         {
@@ -35,8 +35,8 @@ public class App {
             quantityArray[i] = in.nextLine();
         }
     }
-    public static void stringToInt(String priceArray[], String quantityArray[],
-                                   double priceNumArray[], double quantityNumArray[])
+    public static void stringToInt(String[] priceArray, String[] quantityArray,
+                                   double[] priceNumArray, double[] quantityNumArray)
     {
         for (int i = 0; i < 3; i++)
         {
@@ -46,7 +46,7 @@ public class App {
         }
     }
 
-    public static double calcSubtotal(double priceNumArray[], double quantityNumArray[])
+    public static double calcSubtotal(double[] priceNumArray, double[] quantityNumArray)
     {
         double subtotal = 0;
         for (int i = 0; i < 3; i++)
