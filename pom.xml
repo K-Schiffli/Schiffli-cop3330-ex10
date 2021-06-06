@@ -51,7 +51,7 @@
                         <archive>
                             <manifest>
                                 <addClasspath>true</addClasspath>
-                                <mainClass>oop.examples.ch01.ex01.App</mainClass>
+                                <mainClass>src.main.java.Base.App</mainClass>
                             </manifest>
                         </archive>
                     </configuration>
